@@ -1,6 +1,7 @@
 package com.serenitydojo;
 
 public class Dog {
+    public static final String DOG_NOISE = "Woof";
     private final String name;
     private final String favoriteToy;
     private final int age;
@@ -30,5 +31,9 @@ public class Dog {
 
     public void feed() {
         fed = true;
+    }
+
+    public String makeNoise() {
+        return DOG_NOISE;
     }
 }
